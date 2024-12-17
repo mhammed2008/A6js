@@ -60,7 +60,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: #32383e;
 }
 .card{
-    height:350px;
+/*     height:350px; */
     filter: grayscale(70%);
     transition: all 0.5s ease;
 }
