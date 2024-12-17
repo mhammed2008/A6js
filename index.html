@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="text-white">
+    <section id="home" class="d-block">
+        <header>
+            <img src="./images/wraper.png" class="w-100" alt="backgrond">
+        </header>
+        <nav
+            class="navbar navbar-expand-lg position-sticky z-2 mx-1 mx-md-auto shadow-lg col-lg-9  p-0 col-md-6  rounded-4">
+            <div class="container">
+                <h1 class="navbar-brand text-uppercase text-white ms-2 pt-3">
+                    <img src="./images/logo-sm.png" width="35" alt="logo">
+                    <span class="pt-3">Game Reviews</span>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-6  ">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active " data-cat="mmorpg" aria-current="page"
+                                href="#">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" data-cat="shooter" href="#">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" data-cat="sailing" href="#">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" data-cat="permadeath" href="#">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" data-cat="superhero" href="#">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" data-cat="pixel" href="#">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="my-5">
+            <div class="container">
+                <div class="row gy-4" id="games-list">
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="details" class="d-none">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center my-3">
+                <h2>Details Game</h2>
+
+                <button id="xmark" class="btn">
+                    <i class="fat fa-xmark fa-xl"></i>
+                </button>
+                
+            </div>
+            <div class="row" id="detailsShow"></div>
+        </div>
+
+    </section>
+    <div id="loader"
+        class="position-absolute z-3 vh-100 d-flex d-none justify-content-center align-items-center top-0 bottom-0 end-0 start-0 ">
+        <span class="loader"></span>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
